@@ -43,7 +43,7 @@
 ## 🚀 Cómo Usar
 
 ### Opción 1: Usar Online (GitHub Pages)
-1. Visita la [demo en vivo](https://tuusuario.github.io/cisco-command-studio).
+1. Visita la [demo en vivo](https://h4ck3nd.github.io/cheatsheet_cisco_packet_tracert/).
 2. Explora el CheatSheet usando las pestañas superiores.
 3. Construye tu topología en el panel izquierdo.
 4. Haz clic en **"Generar configuración"**.
