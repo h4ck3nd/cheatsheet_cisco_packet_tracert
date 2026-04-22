@@ -603,6 +603,685 @@
             background: #2a6db0;
             left: -5px;
         }
+
+        /* ============================================ */
+        /* SECCIÓN EJEMPLO ROUTING - ESTILOS EXCLUSIVOS */
+        /* ============================================ */
+
+        .ejemplo-routing-section {
+            margin-top: 30px;
+            background: linear-gradient(145deg, #0a1420, #050a12);
+            border-radius: 32px;
+            padding: 2rem;
+            border: 1px solid #3e7fb4;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+        }
+
+        .ejemplo-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .ejemplo-header h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #f0b000, #ffd700);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .ejemplo-header i {
+            font-size: 2.5rem;
+            color: #f0b000;
+            background: #1a2a0f;
+            padding: 12px;
+            border-radius: 20px;
+        }
+
+        /* ============================================ */
+        /* TOPOLOGÍA VISUAL MEJORADA - 3 SITIOS */
+        /* ============================================ */
+
+        .topo-visual {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-around;
+            background: linear-gradient(145deg, #0a111c, #050a10);
+            border-radius: 32px;
+            padding: 40px 20px;
+            border: 2px solid #2e4b6e;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        /* Cada sitio completo (PCs → Switch → Router) */
+        .sitio-completo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 240px;
+            background: rgba(10, 20, 35, 0.6);
+            border-radius: 28px;
+            padding: 20px 15px;
+            backdrop-filter: blur(4px);
+            border: 1px solid #2e4b6e;
+        }
+
+        /* Tarjeta de ciudad/PCs */
+        .ciudad-card {
+            text-align: center;
+            padding: 18px 20px;
+            background: #132433;
+            border-radius: 24px;
+            border: 2px solid;
+            width: 100%;
+            margin-bottom: 8px;
+        }
+
+        .ciudad-card.antofagasta {
+            border-color: #3e9cff;
+            box-shadow: 0 0 25px rgba(62, 156, 255, 0.15);
+        }
+
+        .ciudad-card.santiago {
+            border-color: #f0b000;
+            box-shadow: 0 0 25px rgba(240, 176, 0, 0.15);
+        }
+
+        .ciudad-card.concepcion {
+            border-color: #6fcf97;
+            box-shadow: 0 0 25px rgba(111, 207, 151, 0.15);
+        }
+
+        .ciudad-nombre {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .ciudad-vlan {
+            font-family: 'JetBrains Mono', monospace;
+            background: #0d1824;
+            padding: 5px 14px;
+            border-radius: 30px;
+            display: inline-block;
+            font-size: 0.85rem;
+            border: 1px solid #3e5f80;
+        }
+
+        .pcs-container {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 14px;
+        }
+
+        .mini-pc {
+            background: #0f1a26;
+            border-radius: 16px;
+            padding: 10px 14px;
+            font-size: 0.8rem;
+            border: 1px solid #2e4b6e;
+            text-align: center;
+            min-width: 100px;
+        }
+
+        .mini-pc i {
+            font-size: 1.2rem;
+            margin-bottom: 4px;
+            color: #6bb1ff;
+        }
+
+        .mini-ip {
+            font-family: 'JetBrains Mono', monospace;
+            background: #050a10;
+            padding: 2px 8px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 5px;
+            font-size: 0.7rem;
+        }
+
+        /* Conexión vertical (PCs → Switch → Router) */
+        .conexion-vertical {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 5px 0;
+        }
+
+        .linea-vertical {
+            width: 3px;
+            height: 25px;
+            background: linear-gradient(to bottom, #3e9cff, #6bb1ff);
+            margin: 4px 0;
+        }
+
+        .puerto-tag {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            background: #1a2e45;
+            padding: 3px 10px;
+            border-radius: 20px;
+            color: #b8d2ff;
+        }
+
+        /* Switch Card */
+        .switch-card {
+            background: linear-gradient(145deg, #1a2a4a, #0f1a30);
+            border: 2px solid #3e9cff;
+            border-radius: 20px;
+            padding: 15px 20px;
+            text-align: center;
+            width: 100%;
+            margin: 5px 0;
+        }
+
+        .switch-card i {
+            font-size: 2rem;
+            color: #6bb1ff;
+            margin-bottom: 8px;
+        }
+
+        .switch-nombre {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+        }
+
+        .switch-info {
+            font-size: 0.75rem;
+            opacity: 0.9;
+            font-family: 'JetBrains Mono', monospace;
+            background: #0a1420;
+            padding: 3px 8px;
+            border-radius: 20px;
+            margin: 3px 0;
+        }
+
+        /* Router Card */
+        .router-card-wrapper {
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .router-card {
+            background: linear-gradient(145deg, #1a2a0f, #0f1a08);
+            border: 2px solid #f0b000;
+            border-radius: 20px;
+            padding: 15px 18px;
+            text-align: center;
+        }
+
+        .router-card i {
+            font-size: 2rem;
+            color: #f0b000;
+            margin-bottom: 8px;
+        }
+
+        .router-nombre {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+        }
+
+        .router-ip {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            background: #0a1408;
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin: 4px 0;
+        }
+
+        .router-serial {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            color: #f0b000;
+            background: #1a2a0f;
+            padding: 2px 8px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 2px 0;
+        }
+
+        /* Conexión Serial entre Routers */
+        .serial-connection-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: 120px;
+            padding: 0 5px;
+        }
+
+        .serial-linea-completa {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .serial-endpoint {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            background: #1a2e45;
+            padding: 4px 8px;
+            border-radius: 20px;
+            color: #f0b000;
+        }
+
+        .serial-cable {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cable-line {
+            width: 50px;
+            height: 4px;
+            background: repeating-linear-gradient(90deg, #f0b000 0px, #f0b000 8px, transparent 8px, transparent 16px);
+            border-radius: 4px;
+        }
+
+        .cable-rayo {
+            font-size: 1.2rem;
+            margin-top: -8px;
+            color: #ffd700;
+            text-shadow: 0 0 8px #f0b000;
+        }
+
+        .serial-network {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            background: #0d1824;
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin-top: 8px;
+            color: #8faac0;
+            border: 1px dashed #3e5f80;
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .topo-visual {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .serial-connection-block {
+                flex-direction: row;
+                min-width: auto;
+                margin: 10px 0;
+            }
+
+            .serial-cable {
+                flex-direction: row;
+            }
+
+            .cable-line {
+                width: 80px;
+                height: 4px;
+            }
+        }
+
+        /* Pestañas de explicación */
+        .explicacion-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #2a4057;
+            padding-bottom: 10px;
+        }
+
+        .explicacion-tab {
+            background: transparent;
+            border: none;
+            padding: 12px 24px;
+            font-weight: 600;
+            color: #9aafc9;
+            border-radius: 40px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .explicacion-tab.active {
+            background: #1f405e;
+            color: white;
+            border-bottom: 3px solid #f0b000;
+        }
+
+        .explicacion-content {
+            background: #0d1824;
+            border-radius: 20px;
+            padding: 25px;
+            border: 1px solid #2e4b6e;
+        }
+
+        .paso-routing {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 25px;
+            align-items: flex-start;
+        }
+
+        .paso-icon {
+            width: 50px;
+            height: 50px;
+            background: #1a2a4a;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #f0b000;
+            flex-shrink: 0;
+        }
+
+        .paso-texto {
+            flex: 1;
+        }
+
+        .paso-texto h4 {
+            color: #c7ddff;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .comando-mini {
+            background: #050a10;
+            padding: 10px 15px;
+            border-radius: 12px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            border-left: 4px solid #f0b000;
+            margin: 10px 0;
+        }
+
+        .tabla-rutas {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        .tabla-rutas th {
+            text-align: left;
+            padding: 10px;
+            background: #1a2e45;
+            color: #b8d2ff;
+        }
+
+        .tabla-rutas td {
+            padding: 8px 10px;
+            border-bottom: 1px solid #2a4057;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .flecha-ruta {
+            color: #6fcf97;
+            margin: 0 8px;
+        }
+
+        /* ============================================ */
+        /* SECCIÓN EJEMPLO VLANS - ESTILOS EXCLUSIVOS */
+        /* ============================================ */
+
+        .ejemplo-vlans-section {
+            margin-top: 30px;
+            background: linear-gradient(145deg, #0a1420, #050a12);
+            border-radius: 32px;
+            padding: 2rem;
+            border: 1px solid #6fcf97;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+        }
+
+        .ejemplo-header.vlans {
+            border-bottom: 2px solid #6fcf97;
+        }
+
+        .ejemplo-header.vlans h2 {
+            background: linear-gradient(135deg, #6fcf97, #3e9cff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .ejemplo-header.vlans i {
+            color: #6fcf97;
+            background: #1a3a2a;
+        }
+
+        /* Topología VLANs - Switches en cascada */
+        .topo-vlans {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(145deg, #0a111c, #050a10);
+            border-radius: 32px;
+            padding: 40px 30px;
+            border: 2px solid #2e4b6e;
+            margin-bottom: 30px;
+        }
+
+        /* Switch Central (Switch2) */
+        .switch-central-wrapper {
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .switch-central {
+            background: linear-gradient(145deg, #1a2a4a, #0f1a30);
+            border: 3px solid #f0b000;
+            border-radius: 24px;
+            padding: 20px 40px;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(240, 176, 0, 0.2);
+            min-width: 280px;
+        }
+
+        .switch-central i {
+            font-size: 3rem;
+            color: #f0b000;
+            margin-bottom: 10px;
+        }
+
+        .switch-central .switch-nombre {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #f0b000;
+        }
+
+        .switch-central .switch-info {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            background: #0a1420;
+            padding: 5px 12px;
+            border-radius: 20px;
+            margin: 5px 0;
+        }
+
+        /* Switches laterales */
+        .switches-laterales {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 900px;
+            gap: 30px;
+        }
+
+        .switch-lateral {
+            background: linear-gradient(145deg, #1a2a4a, #0f1a30);
+            border: 2px solid #3e9cff;
+            border-radius: 20px;
+            padding: 15px 25px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .switch-lateral i {
+            font-size: 2.2rem;
+            color: #6bb1ff;
+            margin-bottom: 8px;
+        }
+
+        .switch-lateral .switch-nombre {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        /* PCs agrupados por VLAN */
+        .pcs-por-vlan {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .vlan-grupo {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+            padding: 12px;
+        }
+
+        .vlan-titulo {
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .vlan-titulo.vlan10 {
+            color: #6bb1ff;
+        }
+
+        .vlan-titulo.vlan20 {
+            color: #f0b000;
+        }
+
+        .vlan-titulo.vlan30 {
+            color: #6fcf97;
+        }
+
+        .pc-mini-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            justify-content: center;
+        }
+
+        .pc-chip {
+            background: #0f1a26;
+            border-radius: 12px;
+            padding: 6px 10px;
+            font-size: 0.7rem;
+            border: 1px solid;
+            font-family: 'JetBrains Mono', monospace;
+            text-align: center;
+        }
+
+        .pc-chip.vlan10 {
+            border-color: #3e9cff;
+        }
+
+        .pc-chip.vlan20 {
+            border-color: #f0b000;
+        }
+
+        .pc-chip.vlan30 {
+            border-color: #6fcf97;
+        }
+
+        .pc-chip i {
+            margin-right: 4px;
+            font-size: 0.6rem;
+        }
+
+        /* Conexiones entre switches */
+        .conexion-switches {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px 0;
+            gap: 10px;
+        }
+
+        .trunk-line {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .trunk-cable {
+            width: 60px;
+            height: 4px;
+            background: repeating-linear-gradient(90deg, #f0b000 0px, #f0b000 6px, transparent 6px, transparent 12px);
+        }
+
+        .trunk-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            background: #1a2e45;
+            padding: 3px 8px;
+            border-radius: 20px;
+            color: #f0b000;
+        }
+
+        /* Tabla de asignación de puertos */
+        .tabla-puertos {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            background: #0a111c;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .tabla-puertos th {
+            background: #1a2e45;
+            padding: 10px;
+            font-size: 0.85rem;
+            color: #b8d2ff;
+        }
+
+        .tabla-puertos td {
+            padding: 8px 10px;
+            border-bottom: 1px solid #2a4057;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+        }
+
+        .vlan-badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.7rem;
+        }
+
+        .vlan-badge.vlan10 {
+            background: #1a3a5a;
+            color: #6bb1ff;
+        }
+
+        .vlan-badge.vlan20 {
+            background: #3a2a0a;
+            color: #f0b000;
+        }
+
+        .vlan-badge.vlan30 {
+            background: #1a3a2a;
+            color: #6fcf97;
+        }
+
+        /* Pestañas VLANs */
+        .explicacion-tabs.vlans .explicacion-tab.active {
+            border-bottom-color: #6fcf97;
+        }
     </style>
 </head>
 
@@ -674,6 +1353,325 @@
                     <button class="tab-btn" data-tab="acls"><i class="fas fa-lock"></i> ACLs</button>
                 </div>
                 <div id="cheatsheetContent"></div>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- SECCIÓN EJEMPLO ROUTING - TOPOLOGÍA COMPLETA -->
+        <!-- ============================================ -->
+        <div class="ejemplo-routing-section">
+            <div class="ejemplo-header">
+                <i class="fas fa-map-marked-alt"></i>
+                <h2>Ejemplo Real: 3 Ciudades · Routing Estático</h2>
+            </div>
+
+            <!-- VISUALIZACIÓN DE TOPOLOGÍA MEJORADA -->
+            <div class="topo-visual">
+
+                <!-- SITIO 1: ANTOFAGASTA -->
+                <div class="sitio-completo">
+                    <div class="ciudad-card antofagasta">
+                        <div class="ciudad-nombre">🏜️ Antofagasta</div>
+                        <div class="ciudad-vlan">VLAN 10 · 172.16.0.0/16</div>
+                        <div class="pcs-container">
+                            <div class="mini-pc">
+                                <i class="fas fa-desktop"></i> PC1<br>
+                                <span class="mini-ip">172.16.0.10</span>
+                            </div>
+                            <div class="mini-pc">
+                                <i class="fas fa-desktop"></i> PC2<br>
+                                <span class="mini-ip">172.16.0.11</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conexion-vertical">
+                        <div class="puerto-tag">fa0/1-2</div>
+                        <div class="linea-vertical"></div>
+                        <div class="puerto-tag">fa0/3 (Trunk)</div>
+                    </div>
+
+                    <div class="switch-card">
+                        <i class="fas fa-code-branch"></i>
+                        <div class="switch-nombre">Switch1</div>
+                        <div class="switch-info">VLAN 10 · Access fa0/1-2</div>
+                        <div class="switch-info">Trunk fa0/3 → R1 G0/1</div>
+                    </div>
+
+                    <div class="conexion-vertical">
+                        <div class="linea-vertical"></div>
+                        <div class="puerto-tag">G0/1</div>
+                    </div>
+
+                    <div class="router-card-wrapper">
+                        <div class="router-card">
+                            <i class="fas fa-router"></i>
+                            <div class="router-nombre">Router1</div>
+                            <div class="router-ip">172.16.0.1 / 255.255.0.0</div>
+                            <div class="router-serial">S0/3/0: 200.100.100.1</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONEXIÓN SERIAL 1 (R1 ↔ R2) -->
+                <div class="serial-connection-block">
+                    <div class="serial-linea-completa">
+                        <div class="serial-endpoint">S0/3/0</div>
+                        <div class="serial-cable">
+                            <div class="cable-line"></div>
+                            <div class="cable-rayo">⚡</div>
+                        </div>
+                        <div class="serial-endpoint">S0/3/0</div>
+                    </div>
+                    <div class="serial-network">200.100.100.0/24</div>
+                </div>
+
+                <!-- SITIO 2: SANTIAGO -->
+                <div class="sitio-completo">
+                    <div class="ciudad-card santiago">
+                        <div class="ciudad-nombre">🏔️ Santiago</div>
+                        <div class="ciudad-vlan">VLAN 20 · 120.0.0.0/8</div>
+                        <div class="pcs-container">
+                            <div class="mini-pc">
+                                <i class="fas fa-desktop"></i> PC3<br>
+                                <span class="mini-ip">120.0.0.10</span>
+                            </div>
+                            <div class="mini-pc">
+                                <i class="fas fa-desktop"></i> PC4<br>
+                                <span class="mini-ip">120.0.0.11</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conexion-vertical">
+                        <div class="puerto-tag">fa0/1-2</div>
+                        <div class="linea-vertical"></div>
+                        <div class="puerto-tag">fa0/3 (Trunk)</div>
+                    </div>
+
+                    <div class="switch-card">
+                        <i class="fas fa-code-branch"></i>
+                        <div class="switch-nombre">Switch2</div>
+                        <div class="switch-info">VLAN 20 · Access fa0/1-2</div>
+                        <div class="switch-info">Trunk fa0/3 → R2 G0/1</div>
+                    </div>
+
+                    <div class="conexion-vertical">
+                        <div class="linea-vertical"></div>
+                        <div class="puerto-tag">G0/1</div>
+                    </div>
+
+                    <div class="router-card-wrapper">
+                        <div class="router-card">
+                            <i class="fas fa-router"></i>
+                            <div class="router-nombre">Router2</div>
+                            <div class="router-ip">120.0.0.1 / 255.0.0.0</div>
+                            <div class="router-serial">S0/3/0: 200.100.100.2</div>
+                            <div class="router-serial">S0/3/1: 220.0.10.2</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONEXIÓN SERIAL 2 (R2 ↔ R3) -->
+                <div class="serial-connection-block">
+                    <div class="serial-linea-completa">
+                        <div class="serial-endpoint">S0/3/1</div>
+                        <div class="serial-cable">
+                            <div class="cable-line"></div>
+                            <div class="cable-rayo">⚡</div>
+                        </div>
+                        <div class="serial-endpoint">S0/3/0</div>
+                    </div>
+                    <div class="serial-network">220.0.10.0/24</div>
+                </div>
+
+                <!-- SITIO 3: CONCEPCIÓN -->
+                <div class="sitio-completo">
+                    <div class="ciudad-card concepcion">
+                        <div class="ciudad-nombre">🌊 Concepción</div>
+                        <div class="ciudad-vlan">VLAN 30 · 190.60.0.0/16</div>
+                        <div class="pcs-container">
+                            <div class="mini-pc">
+                                <i class="fas fa-desktop"></i> PC5<br>
+                                <span class="mini-ip">190.60.0.10</span>
+                            </div>
+                            <div class="mini-pc">
+                                <i class="fas fa-desktop"></i> PC6<br>
+                                <span class="mini-ip">190.60.0.11</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conexion-vertical">
+                        <div class="puerto-tag">fa0/1-2</div>
+                        <div class="linea-vertical"></div>
+                        <div class="puerto-tag">fa0/3 (Trunk)</div>
+                    </div>
+
+                    <div class="switch-card">
+                        <i class="fas fa-code-branch"></i>
+                        <div class="switch-nombre">Switch3</div>
+                        <div class="switch-info">VLAN 30 · Access fa0/1-2</div>
+                        <div class="switch-info">Trunk fa0/3 → R3 G0/1</div>
+                    </div>
+
+                    <div class="conexion-vertical">
+                        <div class="linea-vertical"></div>
+                        <div class="puerto-tag">G0/1</div>
+                    </div>
+
+                    <div class="router-card-wrapper">
+                        <div class="router-card">
+                            <i class="fas fa-router"></i>
+                            <div class="router-nombre">Router3</div>
+                            <div class="router-ip">190.60.0.1 / 255.255.0.0</div>
+                            <div class="router-serial">S0/3/0: 220.0.10.1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PESTAÑAS DE EXPLICACIÓN -->
+            <div class="explicacion-tabs">
+                <button class="explicacion-tab active" onclick="showExplicacion('teoria')">📘 ¿Cómo funciona?</button>
+                <button class="explicacion-tab" onclick="showExplicacion('comandos')">📋 Comandos Paso a Paso</button>
+                <button class="explicacion-tab" onclick="showExplicacion('rutas')">🗺️ Tabla de Rutas</button>
+            </div>
+
+            <!-- CONTENIDO DINÁMICO DE EXPLICACIÓN -->
+            <div class="explicacion-content" id="explicacionContent">
+                <!-- Se llena con JavaScript -->
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- SECCIÓN EJEMPLO VLANS - 3 SWITCHES EN CASCADA -->
+        <!-- ============================================ -->
+        <div class="ejemplo-vlans-section">
+            <div class="ejemplo-header vlans">
+                <i class="fas fa-layer-group"></i>
+                <h2>Ejemplo VLANs: Segmentación en misma red 192.168.1.0/24</h2>
+            </div>
+
+            <!-- VISUALIZACIÓN DE TOPOLOGÍA VLANs -->
+            <div class="topo-vlans">
+
+                <!-- SWITCH 1 (Izquierda) - 4 PCs -->
+                <div class="switch-lateral">
+                    <i class="fas fa-code-branch"></i>
+                    <div class="switch-nombre">Switch1</div>
+                    <div class="switch-info" style="margin-top:5px;">VLANs: 10, 20, 30</div>
+
+                    <div class="pcs-por-vlan">
+                        <div class="vlan-grupo">
+                            <div class="vlan-titulo vlan10"><i class="fas fa-chalkboard-user"></i> VLAN10 · Docentes
+                            </div>
+                            <div class="pc-mini-list">
+                                <div class="pc-chip vlan10"><i class="fas fa-desktop"></i> PC1 · .10</div>
+                                <div class="pc-chip vlan10"><i class="fas fa-desktop"></i> PC2 · .11</div>
+                            </div>
+                        </div>
+                        <div class="vlan-grupo">
+                            <div class="vlan-titulo vlan20"><i class="fas fa-user-graduate"></i> VLAN20 · Estudiantes
+                            </div>
+                            <div class="pc-mini-list">
+                                <div class="pc-chip vlan20"><i class="fas fa-desktop"></i> PC3 · .12</div>
+                            </div>
+                        </div>
+                        <div class="vlan-grupo">
+                            <div class="vlan-titulo vlan30"><i class="fas fa-user"></i> VLAN30 · Invitados</div>
+                            <div class="pc-mini-list">
+                                <div class="pc-chip vlan30"><i class="fas fa-desktop"></i> PC4 · .13</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top:12px; font-size:0.7rem; opacity:0.8;">
+                        <i class="fas fa-plug"></i> fa0/2-5 (Access)
+                    </div>
+                </div>
+
+                <!-- Conexión Trunk Switch1 ↔ Switch2 -->
+                <div class="conexion-switches">
+                    <div class="trunk-label">fa0/1</div>
+                    <div class="trunk-line">
+                        <div class="trunk-cable"></div>
+                        <span style="color:#f0b000; font-size:0.7rem;">⚡Trunk⚡</span>
+                        <div class="trunk-cable"></div>
+                    </div>
+                    <div class="trunk-label">fa0/1</div>
+                </div>
+
+                <!-- SWITCH 2 (Central) - Sin PCs -->
+                <div class="switch-central-wrapper">
+                    <div class="switch-central">
+                        <i class="fas fa-code-branch"></i>
+                        <div class="switch-nombre">Switch2 (Central)</div>
+                        <div class="switch-info">VLANs: 10, 20, 30</div>
+                        <div class="switch-info">Sin PCs conectados</div>
+                        <div style="margin-top:10px; font-size:0.75rem;">
+                            <div>🔹 fa0/1 → Switch1</div>
+                            <div>🔹 fa0/3 → Switch3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conexión Trunk Switch2 ↔ Switch3 -->
+                <div class="conexion-switches">
+                    <div class="trunk-label">fa0/3</div>
+                    <div class="trunk-line">
+                        <div class="trunk-cable"></div>
+                        <span style="color:#f0b000; font-size:0.7rem;">⚡Trunk⚡</span>
+                        <div class="trunk-cable"></div>
+                    </div>
+                    <div class="trunk-label">fa0/3</div>
+                </div>
+
+                <!-- SWITCH 3 (Derecha) - 3 PCs -->
+                <div class="switch-lateral">
+                    <i class="fas fa-code-branch"></i>
+                    <div class="switch-nombre">Switch3</div>
+                    <div class="switch-info" style="margin-top:5px;">VLANs: 10, 20, 30</div>
+
+                    <div class="pcs-por-vlan">
+                        <div class="vlan-grupo">
+                            <div class="vlan-titulo vlan10"><i class="fas fa-chalkboard-user"></i> VLAN10 · Docentes
+                            </div>
+                            <div class="pc-mini-list">
+                                <div class="pc-chip vlan10"><i class="fas fa-desktop"></i> PC5 · .14</div>
+                            </div>
+                        </div>
+                        <div class="vlan-grupo">
+                            <div class="vlan-titulo vlan20"><i class="fas fa-user-graduate"></i> VLAN20 · Estudiantes
+                            </div>
+                            <div class="pc-mini-list">
+                                <div class="pc-chip vlan20"><i class="fas fa-desktop"></i> PC6 · .15</div>
+                            </div>
+                        </div>
+                        <div class="vlan-grupo">
+                            <div class="vlan-titulo vlan30"><i class="fas fa-user"></i> VLAN30 · Invitados</div>
+                            <div class="pc-mini-list">
+                                <div class="pc-chip vlan30"><i class="fas fa-desktop"></i> PC7 · .16</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top:12px; font-size:0.7rem; opacity:0.8;">
+                        <i class="fas fa-plug"></i> fa0/11-15 (Access)
+                    </div>
+                </div>
+            </div>
+
+            <!-- PESTAÑAS DE EXPLICACIÓN VLANS -->
+            <div class="explicacion-tabs vlans">
+                <button class="explicacion-tab active" onclick="showExplicacionVlans('teoria')">📘 ¿Cómo funciona
+                    VTP/VLAN?</button>
+                <button class="explicacion-tab" onclick="showExplicacionVlans('comandos')">📋 Comandos de
+                    Configuración</button>
+                <button class="explicacion-tab" onclick="showExplicacionVlans('tabla')">📊 Tabla de Puertos</button>
+            </div>
+
+            <!-- CONTENIDO DINÁMICO DE EXPLICACIÓN VLANS -->
+            <div class="explicacion-content" id="explicacionVlansContent">
+                <!-- Se llena con JavaScript -->
             </div>
         </div>
     </div>
@@ -759,101 +1757,206 @@
                 ]
             };
 
-            // Routing (solo)
+            // Routing (solo) - AMPLIADO CON COMANDOS ESENCIALES
             const routingData = {
                 title: 'Comandos de Routing',
                 sections: [
                     {
-                        heading: 'Acceso básico',
+                        heading: 'Acceso básico y CLI',
                         commands: [
                             { cmd: 'enable', prompt: 'Router>', desc: 'Modo privilegiado' },
                             { cmd: 'configure terminal', prompt: 'Router#', desc: 'Configuración global' },
                             { cmd: 'exit', prompt: 'Router(config)', desc: 'Subir nivel' },
-                            { cmd: 'end', prompt: 'cualquier submodo', desc: 'Salir a privilegiado' }
+                            { cmd: 'end', prompt: 'cualquier submodo', desc: 'Salir a privilegiado' },
+                            { cmd: 'hostname NOMBRE', prompt: 'Router(config)#', desc: 'Cambiar nombre del router' },
+                            { cmd: 'banner motd #TEXTO#', prompt: 'Router(config)#', desc: 'Mensaje de bienvenida' },
+                            { cmd: 'enable secret PASSWORD', prompt: 'Router(config)#', desc: 'Contraseña encriptada para privilegiado' }
                         ]
                     },
                     {
                         heading: 'IP y enrutamiento básico',
                         commands: [
                             { cmd: 'ip routing', prompt: 'Router(config)#', desc: 'Habilita enrutamiento IP' },
-                            { cmd: 'no ip routing', prompt: 'Router(config)#', desc: 'Deshabilita enrutamiento' },
+                            { cmd: 'no ip routing', prompt: 'Router(config)#', desc: 'Deshabilita enrutamiento (modo bridge)' },
                             { cmd: 'show ip route', prompt: 'Router#', desc: 'Tabla de enrutamiento completa' },
-                            { cmd: 'show ip route static', prompt: 'Router#', desc: 'Rutas estáticas' },
+                            { cmd: 'show ip route static', prompt: 'Router#', desc: 'Solo rutas estáticas' },
+                            { cmd: 'show ip route connected', prompt: 'Router#', desc: 'Solo redes directamente conectadas' },
+                            { cmd: 'show ip protocols', prompt: 'Router#', desc: 'Protocolos de enrutamiento activos' },
                             { cmd: 'clear ip route *', prompt: 'Router#', desc: 'Borra toda la tabla (uso simulación)' }
                         ]
                     },
                     {
-                        heading: 'Configuración de interfaces IP',
+                        heading: 'Configuración de Interfaces',
                         commands: [
-                            { cmd: 'interface serial 0/0', prompt: 'Router(config)#', desc: 'Entrar a interfaz serial' },
-                            { cmd: 'ip address 10.0.0.1 255.255.255.252', prompt: 'Router(config-if)#', desc: 'Asignar IP/máscara' },
+                            { cmd: 'interface g0/0/0', prompt: 'Router(config)#', desc: 'Entrar a interfaz GigabitEthernet' },
+                            { cmd: 'interface serial 0/0/0', prompt: 'Router(config)#', desc: 'Entrar a interfaz serial' },
+                            { cmd: 'ip address 10.0.0.1 255.255.255.252', prompt: 'Router(config-if)#', desc: 'Asignar IP y máscara' },
+                            { cmd: 'description ENLACE A R2', prompt: 'Router(config-if)#', desc: 'Descripción de la interfaz' },
                             { cmd: 'no shutdown', prompt: 'Router(config-if)#', desc: 'Activar interfaz' },
                             { cmd: 'shutdown', prompt: 'Router(config-if)#', desc: 'Desactivar interfaz' },
-                            { cmd: 'show ip interface brief', prompt: 'Router#', desc: 'Resumen de interfaces IP' }
+                            { cmd: 'clock rate 64000', prompt: 'Router(config-if)#', desc: 'Reloj DCE en enlace serial' },
+                            { cmd: 'bandwidth 64', prompt: 'Router(config-if)#', desc: 'Ancho de banda en Kbps (métrica)' },
+                            { cmd: 'show ip interface brief', prompt: 'Router#', desc: 'Resumen de todas las interfaces IP' },
+                            { cmd: 'show interfaces', prompt: 'Router#', desc: 'Detalle de todas las interfaces' },
+                            { cmd: 'show interfaces g0/0/0', prompt: 'Router#', desc: 'Estadísticas de interfaz específica' }
                         ]
                     },
                     {
-                        heading: 'Rutas estáticas',
+                        heading: 'Subinterfaces (Router-on-a-Stick)',
                         commands: [
-                            { cmd: 'ip route 192.168.10.0 255.255.255.0 10.0.0.2', prompt: 'Router(config)#', desc: 'Ruta con next-hop IP' },
-                            { cmd: 'ip route 192.168.30.0 255.255.255.0 s0/0', prompt: 'Router(config)#', desc: 'Ruta con interfaz de salida' },
+                            { cmd: 'interface g0/0/0.10', prompt: 'Router(config)#', desc: 'Crear subinterfaz para VLAN 10' },
+                            { cmd: 'encapsulation dot1Q 10', prompt: 'Router(config-subif)#', desc: 'Encapsulación 802.1Q VLAN 10' },
+                            { cmd: 'ip address 192.168.10.1 255.255.255.0', prompt: 'Router(config-subif)#', desc: 'IP del gateway de la VLAN' },
+                            { cmd: 'description Gateway VLAN 10', prompt: 'Router(config-subif)#', desc: 'Descripción de subinterfaz' },
+                            { cmd: 'no shutdown', prompt: 'Router(config-subif)#', desc: 'Activar subinterfaz (y física)' }
+                        ]
+                    },
+                    {
+                        heading: 'Rutas Estáticas',
+                        commands: [
+                            { cmd: 'ip route 192.168.10.0 255.255.255.0 10.0.0.2', prompt: 'Router(config)#', desc: 'Ruta estática con next-hop IP' },
+                            { cmd: 'ip route 192.168.30.0 255.255.255.0 s0/0/0', prompt: 'Router(config)#', desc: 'Ruta estática con interfaz de salida' },
                             { cmd: 'ip route 0.0.0.0 0.0.0.0 10.0.0.2', prompt: 'Router(config)#', desc: 'Ruta por defecto' },
+                            { cmd: 'ip route 0.0.0.0 0.0.0.0 s0/0/0', prompt: 'Router(config)#', desc: 'Ruta por defecto por interfaz' },
+                            { cmd: 'ip route 10.10.0.0 255.255.0.0 10.0.0.2 5', prompt: 'Router(config)#', desc: 'Ruta estática flotante (AD 5)' },
+                            { cmd: 'ip route 172.16.0.0 255.255.0.0 Null0', prompt: 'Router(config)#', desc: 'Ruta a Null0 (agujero negro)' },
                             { cmd: 'no ip route 192.168.10.0 255.255.255.0 10.0.0.2', prompt: 'Router(config)#', desc: 'Eliminar ruta estática' }
                         ]
                     },
                     {
-                        heading: 'Verificación de conectividad',
+                        heading: 'Rutas Resumen (Summary)',
                         commands: [
-                            { cmd: 'ping 192.168.20.10', prompt: 'Router#', desc: 'Test ICMP' },
-                            { cmd: 'traceroute 192.168.120.10', prompt: 'Router#', desc: 'Ruta de saltos' },
-                            { cmd: 'show arp', prompt: 'Router#', desc: 'Tabla ARP' }
+                            { cmd: 'ip route 192.168.0.0 255.255.252.0 10.0.0.2', prompt: 'Router(config)#', desc: 'Resumen 192.168.0.0/22 (4 redes)' },
+                            { cmd: 'ip route 172.16.0.0 255.240.0.0 s0/0/0', prompt: 'Router(config)#', desc: 'Resumen 172.16.0.0/12' }
+                        ]
+                    },
+                    {
+                        heading: 'Verificación y Troubleshooting',
+                        commands: [
+                            { cmd: 'ping 192.168.20.10', prompt: 'Router#', desc: 'Test ICMP básico' },
+                            { cmd: 'ping 192.168.20.10 source 10.0.0.1', prompt: 'Router#', desc: 'Ping con IP de origen específica' },
+                            { cmd: 'extended ping', prompt: 'Router#', desc: 'Ping extendido (múltiples opciones)' },
+                            { cmd: 'traceroute 192.168.120.10', prompt: 'Router#', desc: 'Ruta de saltos hasta destino' },
+                            { cmd: 'show arp', prompt: 'Router#', desc: 'Tabla ARP (IP ↔ MAC)' },
+                            { cmd: 'clear arp-cache', prompt: 'Router#', desc: 'Limpiar tabla ARP' },
+                            { cmd: 'show cdp neighbors', prompt: 'Router#', desc: 'Vecinos Cisco Discovery Protocol' },
+                            { cmd: 'show cdp neighbors detail', prompt: 'Router#', desc: 'Detalle de vecinos CDP' },
+                            { cmd: 'show lldp neighbors', prompt: 'Router#', desc: 'Vecinos LLDP (estándar)' },
+                            { cmd: 'debug ip packet', prompt: 'Router#', desc: 'Debug de paquetes IP (¡usar con cuidado!)' },
+                            { cmd: 'undebug all', prompt: 'Router#', desc: 'Desactivar todos los debugs' },
+                            { cmd: 'terminal monitor', prompt: 'Router#', desc: 'Ver logs en sesión telnet/SSH' }
+                        ]
+                    },
+                    {
+                        heading: 'Gestión y Seguridad Básica',
+                        commands: [
+                            { cmd: 'line console 0', prompt: 'Router(config)#', desc: 'Configurar puerto de consola' },
+                            { cmd: 'password CONTRASEÑA', prompt: 'Router(config-line)#', desc: 'Password para consola' },
+                            { cmd: 'login', prompt: 'Router(config-line)#', desc: 'Habilitar autenticación local' },
+                            { cmd: 'line vty 0 4', prompt: 'Router(config)#', desc: 'Configurar líneas virtuales (Telnet/SSH)' },
+                            { cmd: 'transport input ssh', prompt: 'Router(config-line)#', desc: 'Permitir solo SSH' },
+                            { cmd: 'ip domain-name ejemplo.com', prompt: 'Router(config)#', desc: 'Dominio para SSH' },
+                            { cmd: 'crypto key generate rsa', prompt: 'Router(config)#', desc: 'Generar clave RSA para SSH' },
+                            { cmd: 'username admin secret PASSWORD', prompt: 'Router(config)#', desc: 'Usuario local con contraseña' },
+                            { cmd: 'ip ssh version 2', prompt: 'Router(config)#', desc: 'Forzar SSH versión 2' }
                         ]
                     }
                 ]
             };
 
-            // VLANs (solo)
+            // VLANs (solo) - AMPLIADO CON COMANDOS ESENCIALES
             const vlansData = {
                 title: 'Comandos de VLANs en Switches',
                 sections: [
                     {
-                        heading: 'Crear y nombrar VLANs',
+                        heading: 'Crear y Gestionar VLANs',
                         commands: [
-                            { cmd: 'vlan 10', prompt: 'Switch(config)#', desc: 'Crear VLAN 10' },
-                            { cmd: 'name VLAN10', prompt: 'Switch(config-vlan)#', desc: 'Nombre descriptivo' },
-                            { cmd: 'exit', prompt: 'Switch(config-vlan)#', desc: 'Salir de configuración VLAN' },
-                            { cmd: 'show vlan brief', prompt: 'Switch#', desc: 'Listado resumido' },
-                            { cmd: 'show vlan id 10', prompt: 'Switch#', desc: 'Detalle VLAN 10' },
-                            { cmd: 'show vlan', prompt: 'Switch#', desc: 'VLANs con detalle' }
+                            { cmd: 'vlan 10', prompt: 'Switch(config)#', desc: 'Crear VLAN 10 y entrar a config-vlan' },
+                            { cmd: 'name Docentes', prompt: 'Switch(config-vlan)#', desc: 'Asignar nombre descriptivo' },
+                            { cmd: 'vlan 20-30', prompt: 'Switch(config)#', desc: 'Crear rango de VLANs (20,21..30)' },
+                            { cmd: 'no vlan 10', prompt: 'Switch(config)#', desc: 'Eliminar VLAN 10' },
+                            { cmd: 'exit', prompt: 'Switch(config-vlan)#', desc: 'Salir de configuración de VLAN' },
+                            { cmd: 'show vlan brief', prompt: 'Switch#', desc: 'Listado resumido de VLANs y puertos' },
+                            { cmd: 'show vlan id 10', prompt: 'Switch#', desc: 'Detalle específico de VLAN 10' },
+                            { cmd: 'show vlan name Docentes', prompt: 'Switch#', desc: 'Buscar VLAN por nombre' },
+                            { cmd: 'show vlan summary', prompt: 'Switch#', desc: 'Resumen numérico de VLANs' }
                         ]
                     },
                     {
-                        heading: 'Asignar puertos (access)',
+                        heading: 'Asignación de Puertos (Access)',
                         commands: [
-                            { cmd: 'interface fastEthernet 0/1', prompt: 'Switch(config)#', desc: 'Entrar al puerto' },
-                            { cmd: 'switchport mode access', prompt: 'Switch(config-if)#', desc: 'Modo access' },
-                            { cmd: 'switchport access vlan 10', prompt: 'Switch(config-if)#', desc: 'Asignar a VLAN 10' },
-                            { cmd: 'switchport access vlan 20', prompt: 'Switch(config-if)#', desc: 'Asignar a VLAN 20' },
-                            { cmd: 'no switchport access vlan 10', prompt: 'Switch(config-if)#', desc: 'Remover asignación' },
-                            { cmd: 'show running-config interface fa0/1', prompt: 'Switch#', desc: 'Ver config del puerto' }
+                            { cmd: 'interface fastEthernet 0/1', prompt: 'Switch(config)#', desc: 'Entrar a un puerto individual' },
+                            { cmd: 'interface range fa0/2-5', prompt: 'Switch(config)#', desc: 'Configurar rango de puertos' },
+                            { cmd: 'interface range fa0/1, fa0/5-8', prompt: 'Switch(config)#', desc: 'Rango discontinuo' },
+                            { cmd: 'switchport mode access', prompt: 'Switch(config-if)#', desc: 'Forzar puerto como access' },
+                            { cmd: 'switchport access vlan 10', prompt: 'Switch(config-if)#', desc: 'Asignar puerto a VLAN 10' },
+                            { cmd: 'no switchport access vlan', prompt: 'Switch(config-if)#', desc: 'Remover asignación (vuelve a VLAN 1)' },
+                            { cmd: 'switchport host', prompt: 'Switch(config-if)#', desc: 'Modo access + portfast (para PCs)' },
+                            { cmd: 'switchport voice vlan 50', prompt: 'Switch(config-if)#', desc: 'VLAN de voz para teléfonos IP' },
+                            { cmd: 'show running-config interface fa0/1', prompt: 'Switch#', desc: 'Ver configuración del puerto' },
+                            { cmd: 'show interfaces status', prompt: 'Switch#', desc: 'Estado y VLAN de todos los puertos' }
                         ]
                     },
                     {
-                        heading: 'Trunk y puertos hacia router',
+                        heading: 'Puertos Trunk',
                         commands: [
-                            { cmd: 'switchport mode trunk', prompt: 'Switch(config-if)#', desc: 'Configurar como trunk' },
-                            { cmd: 'switchport trunk allowed vlan 10,20', prompt: 'Switch(config-if)#', desc: 'VLANs permitidas en trunk' },
-                            { cmd: 'show interfaces trunk', prompt: 'Switch#', desc: 'Ver trunks y VLANs' },
-                            { cmd: 'show interfaces fa0/24 switchport', prompt: 'Switch#', desc: 'Detalles modo/VLAN de puerto' }
+                            { cmd: 'interface g0/1', prompt: 'Switch(config)#', desc: 'Entrar al puerto de trunk' },
+                            { cmd: 'switchport trunk encapsulation dot1q', prompt: 'Switch(config-if)#', desc: 'Forzar 802.1Q (switches antiguos)' },
+                            { cmd: 'switchport mode trunk', prompt: 'Switch(config-if)#', desc: 'Configurar puerto como trunk' },
+                            { cmd: 'switchport trunk allowed vlan 10,20,30', prompt: 'Switch(config-if)#', desc: 'Especificar VLANs permitidas' },
+                            { cmd: 'switchport trunk allowed vlan add 40', prompt: 'Switch(config-if)#', desc: 'Añadir VLAN a la lista existente' },
+                            { cmd: 'switchport trunk allowed vlan all', prompt: 'Switch(config-if)#', desc: 'Permitir todas las VLANs (por defecto)' },
+                            { cmd: 'switchport trunk allowed vlan none', prompt: 'Switch(config-if)#', desc: 'Bloquear todas las VLANs' },
+                            { cmd: 'switchport trunk native vlan 99', prompt: 'Switch(config-if)#', desc: 'Cambiar VLAN nativa (debe coincidir)' },
+                            { cmd: 'switchport nonegotiate', prompt: 'Switch(config-if)#', desc: 'Desactivar DTP (Dynamic Trunking Protocol)' },
+                            { cmd: 'show interfaces trunk', prompt: 'Switch#', desc: 'Ver todos los trunks y sus VLANs' },
+                            { cmd: 'show interfaces g0/1 switchport', prompt: 'Switch#', desc: 'Detalle administrativo/operacional del puerto' },
+                            { cmd: 'show interfaces g0/1 trunk', prompt: 'Switch#', desc: 'VLANs permitidas y activas en el trunk' }
                         ]
                     },
                     {
-                        heading: 'Limpieza y verificación',
+                        heading: 'VTP (VLAN Trunking Protocol)',
                         commands: [
-                            { cmd: 'show vlan', prompt: 'Switch#', desc: 'Información VLAN' },
-                            { cmd: 'show vlan brief', prompt: 'Switch#', desc: 'Resumen' },
-                            { cmd: 'show interfaces trunk', prompt: 'Switch#', desc: 'Estado trunks' },
-                            { cmd: 'erase startup-config', prompt: 'Switch#', desc: 'Borrar configuración guardada' },
+                            { cmd: 'vtp mode server', prompt: 'Switch(config)#', desc: 'Modo servidor VTP (puede crear VLANs)' },
+                            { cmd: 'vtp mode client', prompt: 'Switch(config)#', desc: 'Modo cliente (aprende VLANs del servidor)' },
+                            { cmd: 'vtp mode transparent', prompt: 'Switch(config)#', desc: 'Modo transparente (reenvía pero no aprende)' },
+                            { cmd: 'vtp domain NOMBRE', prompt: 'Switch(config)#', desc: 'Establecer dominio VTP' },
+                            { cmd: 'vtp password PASSWORD', prompt: 'Switch(config)#', desc: 'Contraseña para el dominio VTP' },
+                            { cmd: 'vtp version 2', prompt: 'Switch(config)#', desc: 'Cambiar versión VTP' },
+                            { cmd: 'show vtp status', prompt: 'Switch#', desc: 'Ver estado VTP (modo, dominio, revision)' }
+                        ]
+                    },
+                    {
+                        heading: 'STP y VLANs (Spanning-Tree)',
+                        commands: [
+                            { cmd: 'spanning-tree vlan 10 root primary', prompt: 'Switch(config)#', desc: 'Forzar root bridge para VLAN 10' },
+                            { cmd: 'spanning-tree vlan 20 priority 4096', prompt: 'Switch(config)#', desc: 'Ajustar prioridad para VLAN 20' },
+                            { cmd: 'spanning-tree portfast', prompt: 'Switch(config-if)#', desc: 'Activar PortFast en puerto access' },
+                            { cmd: 'spanning-tree bpduguard enable', prompt: 'Switch(config-if)#', desc: 'Proteger contra BPDUs no deseadas' },
+                            { cmd: 'show spanning-tree vlan 10', prompt: 'Switch#', desc: 'Ver STP para VLAN 10' }
+                        ]
+                    },
+                    {
+                        heading: 'Seguridad de Puerto (Port-Security)',
+                        commands: [
+                            { cmd: 'switchport port-security', prompt: 'Switch(config-if)#', desc: 'Activar seguridad de puerto' },
+                            { cmd: 'switchport port-security maximum 2', prompt: 'Switch(config-if)#', desc: 'Máximo de MACs permitidas' },
+                            { cmd: 'switchport port-security mac-address sticky', prompt: 'Switch(config-if)#', desc: 'Aprender MACs dinámicamente' },
+                            { cmd: 'switchport port-security violation restrict', prompt: 'Switch(config-if)#', desc: 'Modo de violación (protect/restrict/shutdown)' },
+                            { cmd: 'show port-security', prompt: 'Switch#', desc: 'Ver estado de seguridad de puertos' },
+                            { cmd: 'show port-security address', prompt: 'Switch#', desc: 'MACs seguras aprendidas' }
+                        ]
+                    },
+                    {
+                        heading: 'Verificación y Limpieza',
+                        commands: [
+                            { cmd: 'show vlan', prompt: 'Switch#', desc: 'Información completa de VLANs' },
+                            { cmd: 'show vlan brief', prompt: 'Switch#', desc: 'Resumen rápido' },
+                            { cmd: 'show interfaces trunk', prompt: 'Switch#', desc: 'Lista de trunks y VLANs permitidas' },
+                            { cmd: 'show mac address-table vlan 10', prompt: 'Switch#', desc: 'Tabla MAC para VLAN 10' },
+                            { cmd: 'clear mac address-table dynamic', prompt: 'Switch#', desc: 'Limpiar tabla MAC dinámica' },
+                            { cmd: 'erase startup-config', prompt: 'Switch#', desc: 'Borrar configuración guardada (NVRAM)' },
+                            { cmd: 'delete vlan.dat', prompt: 'Switch#', desc: 'Eliminar archivo de VLANs (al reiniciar)' },
                             { cmd: 'reload', prompt: 'Switch#', desc: 'Reiniciar switch' }
                         ]
                     }
@@ -1390,6 +2493,371 @@
             // Inicialización
             renderCanvas();
             setMode('select');
+
+            // ============================================
+            // FUNCIONES PARA LA SECCIÓN EJEMPLO ROUTING
+            // ============================================
+
+            const explicacionTeoria = `
+  <div class="paso-routing">
+    <div class="paso-icon"><i class="fas fa-network-wired"></i></div>
+    <div class="paso-texto">
+      <h4>🌐 ¿Qué está pasando?</h4>
+      <p>Tenemos <strong>3 redes LAN separadas</strong> (Antofagasta, Santiago, Concepción) conectadas mediante <strong>3 routers en serie</strong> usando enlaces Seriales.</p>
+      <p>Cada router conoce <strong>directamente</strong> su propia red LAN, pero <strong>NO</strong> conoce las redes de los otros routers. Para que un PC de Antofagasta (172.16.0.10) pueda hacer ping a un PC de Concepción (190.60.0.10), los routers necesitan <strong>rutas estáticas</strong> que les indiquen "por dónde enviar" los paquetes.</p>
+    </div>
+  </div>
+  <div class="paso-routing">
+    <div class="paso-icon"><i class="fas fa-route"></i></div>
+    <div class="paso-texto">
+      <h4>🧭 El Viaje de un Paquete (PC1 → PC6)</h4>
+      <p>1️⃣ <strong>PC1 (172.16.0.10)</strong> quiere enviar un ping a <strong>PC6 (190.60.0.11)</strong>. Como están en redes diferentes, el paquete va al <strong>Gateway (172.16.0.1)</strong>.</p>
+      <p>2️⃣ <strong>Router1</strong> recibe el paquete y mira su tabla de enrutamiento. Encuentra una ruta: <code>190.60.0.0/16 → 200.100.100.2</code>. Reenvía el paquete por <strong>Serial0/3/0</strong> hacia Router2.</p>
+      <p>3️⃣ <strong>Router2</strong> recibe el paquete. Su tabla indica: <code>190.60.0.0/16 → 220.0.10.1</code>. Reenvía por <strong>Serial0/3/1</strong> hacia Router3.</p>
+      <p>4️⃣ <strong>Router3</strong> recibe el paquete. La red <code>190.60.0.0/16</code> está <strong>directamente conectada</strong> a su interfaz GigabitEthernet0/1. Entrega el paquete a PC6.</p>
+      <p>✅ <strong>¡Ping exitoso!</strong> El paquete de vuelta sigue las rutas inversas gracias a las rutas estáticas configuradas en cada router.</p>
+    </div>
+  </div>
+  <div class="paso-routing">
+    <div class="paso-icon"><i class="fas fa-lightbulb"></i></div>
+    <div class="paso-texto">
+      <h4>💡 ¿Por qué rutas estáticas?</h4>
+      <p>En este ejemplo no usamos protocolos dinámicos (OSPF, EIGRP). Cada router necesita que le digamos manualmente cómo llegar a las redes que no conoce directamente.</p>
+      <p>La sintaxis es: <code>ip route &lt;red-destino&gt; &lt;máscara&gt; &lt;siguiente-salto&gt;</code></p>
+    </div>
+  </div>
+`;
+
+            const explicacionComandos = `
+  <div style="margin-bottom:25px;">
+    <h4 style="color:#f0b000; margin-bottom:15px;"><i class="fas fa-desktop"></i> 1. Configuración de PCs</h4>
+    <div class="comando-mini">
+      PC1: IP 172.16.0.10 / 255.255.0.0 / Gateway 172.16.0.1<br>
+      PC2: IP 172.16.0.11 / 255.255.0.0 / Gateway 172.16.0.1<br>
+      PC3: IP 120.0.0.10 / 255.0.0.0 / Gateway 120.0.0.1<br>
+      PC4: IP 120.0.0.11 / 255.0.0.0 / Gateway 120.0.0.1<br>
+      PC5: IP 190.60.0.10 / 255.255.0.0 / Gateway 190.60.0.1<br>
+      PC6: IP 190.60.0.11 / 255.255.0.0 / Gateway 190.60.0.1
+    </div>
+  </div>
+  
+  <div style="margin-bottom:25px;">
+    <h4 style="color:#f0b000; margin-bottom:15px;"><i class="fas fa-code-branch"></i> 2. Configuración de Switches (VLANs y puertos)</h4>
+    <div class="comando-mini">
+      <strong>Switch1:</strong><br>
+      vlan 10<br>
+      name Antofagasta<br>
+      interface range fa0/1-2<br>
+      switchport mode access<br>
+      switchport access vlan 10<br>
+      interface fa0/3<br>
+      switchport mode trunk<br>
+    </div>
+    <div class="comando-mini" style="margin-top:10px;">
+      <strong>Switch2:</strong><br>
+      vlan 20<br>
+      name Santiago<br>
+      interface range fa0/1-2<br>
+      switchport mode access<br>
+      switchport access vlan 20<br>
+      interface fa0/3<br>
+      switchport mode trunk<br>
+    </div>
+    <div class="comando-mini" style="margin-top:10px;">
+      <strong>Switch3:</strong><br>
+      vlan 30<br>
+      name Concepcion<br>
+      interface range fa0/1-2<br>
+      switchport mode access<br>
+      switchport access vlan 30<br>
+      interface fa0/3<br>
+      switchport mode trunk<br>
+    </div>
+  </div>
+  
+  <div style="margin-bottom:25px;">
+    <h4 style="color:#f0b000; margin-bottom:15px;"><i class="fas fa-router"></i> 3. Configuración Router1 (Antofagasta)</h4>
+    <div class="comando-mini">
+      interface g0/1<br>
+      ip address 172.16.0.1 255.255.0.0<br>
+      no shutdown<br>
+      exit<br>
+      interface s0/3/0<br>
+      ip address 200.100.100.1 255.255.255.0<br>
+      clock rate 64000<br>
+      no shutdown<br>
+      exit<br>
+      ip route 120.0.0.0 255.0.0.0 200.100.100.2<br>
+      ip route 190.60.0.0 255.255.0.0 200.100.100.2<br>
+    </div>
+  </div>
+  
+  <div style="margin-bottom:25px;">
+    <h4 style="color:#f0b000; margin-bottom:15px;"><i class="fas fa-router"></i> 4. Configuración Router2 (Santiago)</h4>
+    <div class="comando-mini">
+      interface g0/1<br>
+      ip address 120.0.0.1 255.0.0.0<br>
+      no shutdown<br>
+      exit<br>
+      interface s0/3/0<br>
+      ip address 200.100.100.2 255.255.255.0<br>
+      no shutdown<br>
+      exit<br>
+      interface s0/3/1<br>
+      ip address 220.0.10.2 255.255.255.0<br>
+      no shutdown<br>
+      exit<br>
+      ip route 172.16.0.0 255.255.0.0 200.100.100.1<br>
+      ip route 190.60.0.0 255.255.0.0 220.0.10.1<br>
+    </div>
+  </div>
+  
+  <div style="margin-bottom:25px;">
+    <h4 style="color:#f0b000; margin-bottom:15px;"><i class="fas fa-router"></i> 5. Configuración Router3 (Concepción)</h4>
+    <div class="comando-mini">
+      interface g0/1<br>
+      ip address 190.60.0.1 255.255.0.0<br>
+      no shutdown<br>
+      exit<br>
+      interface s0/3/0<br>
+      ip address 220.0.10.1 255.255.255.0<br>
+      clock rate 64000<br>
+      no shutdown<br>
+      exit<br>
+      ip route 172.16.0.0 255.255.0.0 220.0.10.2<br>
+      ip route 120.0.0.0 255.0.0.0 220.0.10.2<br>
+    </div>
+  </div>
+`;
+
+            const explicacionRutas = `
+  <h4 style="color:#f0b000; margin-bottom:20px;"><i class="fas fa-table"></i> Tablas de Enrutamiento (rutas estáticas configuradas)</h4>
+  
+  <h5 style="color:#b8d2ff; margin:20px 0 10px;">📍 Router1 (Antofagasta)</h5>
+  <table class="tabla-rutas">
+    <tr><th>Red Destino</th><th>Máscara</th><th>Siguiente Salto</th><th>Interfaz</th></tr>
+    <tr><td>172.16.0.0</td><td>255.255.0.0</td><td>Conectada</td><td>G0/1</td></tr>
+    <tr><td>200.100.100.0</td><td>255.255.255.0</td><td>Conectada</td><td>S0/3/0</td></tr>
+    <tr><td style="color:#6fcf97;">120.0.0.0</td><td>255.0.0.0</td><td>200.100.100.2</td><td>S0/3/0</td></tr>
+    <tr><td style="color:#6fcf97;">190.60.0.0</td><td>255.255.0.0</td><td>200.100.100.2</td><td>S0/3/0</td></tr>
+  </table>
+  
+  <h5 style="color:#b8d2ff; margin:25px 0 10px;">📍 Router2 (Santiago)</h5>
+  <table class="tabla-rutas">
+    <tr><th>Red Destino</th><th>Máscara</th><th>Siguiente Salto</th><th>Interfaz</th></tr>
+    <tr><td>120.0.0.0</td><td>255.0.0.0</td><td>Conectada</td><td>G0/1</td></tr>
+    <tr><td>200.100.100.0</td><td>255.255.255.0</td><td>Conectada</td><td>S0/3/0</td></tr>
+    <tr><td>220.0.10.0</td><td>255.255.255.0</td><td>Conectada</td><td>S0/3/1</td></tr>
+    <tr><td style="color:#6fcf97;">172.16.0.0</td><td>255.255.0.0</td><td>200.100.100.1</td><td>S0/3/0</td></tr>
+    <tr><td style="color:#6fcf97;">190.60.0.0</td><td>255.255.0.0</td><td>220.0.10.1</td><td>S0/3/1</td></tr>
+  </table>
+  
+  <h5 style="color:#b8d2ff; margin:25px 0 10px;">📍 Router3 (Concepción)</h5>
+  <table class="tabla-rutas">
+    <tr><th>Red Destino</th><th>Máscara</th><th>Siguiente Salto</th><th>Interfaz</th></tr>
+    <tr><td>190.60.0.0</td><td>255.255.0.0</td><td>Conectada</td><td>G0/1</td></tr>
+    <tr><td>220.0.10.0</td><td>255.255.255.0</td><td>Conectada</td><td>S0/3/0</td></tr>
+    <tr><td style="color:#6fcf97;">172.16.0.0</td><td>255.255.0.0</td><td>220.0.10.2</td><td>S0/3/0</td></tr>
+    <tr><td style="color:#6fcf97;">120.0.0.0</td><td>255.0.0.0</td><td>220.0.10.2</td><td>S0/3/0</td></tr>
+  </table>
+  
+  <div style="margin-top:30px; padding:20px; background:#0a1420; border-radius:16px;">
+    <i class="fas fa-info-circle" style="color:#f0b000;"></i> 
+    <strong>Explicación:</strong> Las rutas en <span style="color:#6fcf97;">verde</span> son las rutas estáticas configuradas manualmente. 
+    Las rutas "Conectada" son redes que el router conoce directamente por estar conectadas a sus interfaces.
+  </div>
+`;
+
+            window.showExplicacion = function (tab) {
+                document.querySelectorAll('.explicacion-tab').forEach(t => t.classList.remove('active'));
+                event.target.classList.add('active');
+
+                const content = document.getElementById('explicacionContent');
+                if (tab === 'teoria') content.innerHTML = explicacionTeoria;
+                else if (tab === 'comandos') content.innerHTML = explicacionComandos;
+                else if (tab === 'rutas') content.innerHTML = explicacionRutas;
+            };
+
+            // Inicializar con teoría
+            document.addEventListener('DOMContentLoaded', () => {
+                if (document.getElementById('explicacionContent')) {
+                    document.getElementById('explicacionContent').innerHTML = explicacionTeoria;
+                }
+            });
+
+            // ============================================
+            // FUNCIONES PARA LA SECCIÓN EJEMPLO VLANS
+            // ============================================
+
+            const explicacionVlansTeoria = `
+  <div class="paso-routing">
+    <div class="paso-icon"><i class="fas fa-layer-group" style="color:#6fcf97;"></i></div>
+    <div class="paso-texto">
+      <h4>🎯 ¿Qué son las VLANs?</h4>
+      <p>Las <strong>VLANs (Virtual LANs)</strong> permiten dividir un switch físico en <strong>múltiples switches lógicos</strong>. En este ejemplo, aunque todos los PCs están en la misma red <code>192.168.1.0/24</code>, <strong>no pueden comunicarse entre VLANs diferentes</strong> sin un router.</p>
+      <p>Tenemos <strong>3 VLANs</strong>:</p>
+      <ul style="margin-left:20px; color:#b8d2ff;">
+        <li><span class="vlan-badge vlan10">VLAN 10</span> Docentes (3 PCs)</li>
+        <li><span class="vlan-badge vlan20">VLAN 20</span> Estudiantes (2 PCs)</li>
+        <li><span class="vlan-badge vlan30">VLAN 30</span> Invitados (2 PCs)</li>
+      </ul>
+    </div>
+  </div>
+  <div class="paso-routing">
+    <div class="paso-icon"><i class="fas fa-code-branch" style="color:#f0b000;"></i></div>
+    <div class="paso-texto">
+      <h4>🔗 Trunks entre Switches</h4>
+      <p>Los switches están conectados mediante <strong>enlaces Trunk</strong>. Un puerto en modo <code>trunk</code> transporta tráfico de <strong>múltiples VLANs</strong> etiquetando cada trama con su VLAN ID (802.1Q).</p>
+      <p><strong>Switch2</strong> actúa como <strong>switch central</strong> sin PCs conectados, solo reenvía tráfico entre Switch1 y Switch3.</p>
+      <p>Un PC en <span class="vlan-badge vlan10">VLAN 10</span> conectado a Switch1 puede comunicarse con otro PC en <span class="vlan-badge vlan10">VLAN 10</span> conectado a Switch3 porque los trunks transportan esa VLAN a través de toda la red.</p>
+    </div>
+  </div>
+  <div class="paso-routing">
+    <div class="paso-icon"><i class="fas fa-network-wired" style="color:#3e9cff;"></i></div>
+    <div class="paso-texto">
+      <h4>🚦 Segmentación y Seguridad</h4>
+      <p>Sin un router (Router-on-a-stick), los PCs en <span class="vlan-badge vlan10">VLAN 10</span> <strong>NO</strong> pueden comunicarse con PCs en <span class="vlan-badge vlan20">VLAN 20</span>, aunque compartan el mismo switch físico. Esto proporciona <strong>aislamiento y seguridad</strong> entre departamentos.</p>
+      <p>Para habilitar comunicación entre VLANs, se necesitaría un router con subinterfaces (Router-on-a-stick) o un switch de Capa 3.</p>
+    </div>
+  </div>
+`;
+
+            const explicacionVlansComandos = `
+  <h4 style="color:#6fcf97; margin-bottom:20px;"><i class="fas fa-terminal"></i> Configuración de Switches</h4>
+  
+  <div style="margin-bottom:25px;">
+    <h5 style="color:#f0b000;">🔹 Switch1</h5>
+    <div class="comando-mini">
+      enable<br>
+      configure terminal<br>
+      vlan 10<br>
+      name Docentes<br>
+      vlan 20<br>
+      name Estudiantes<br>
+      vlan 30<br>
+      name Invitados<br>
+      exit<br>
+      interface range fastEthernet 0/2-5<br>
+      switchport mode access<br>
+      switchport access vlan 10<br>
+      exit<br>
+      interface fastEthernet 0/1<br>
+      switchport mode trunk<br>
+      switchport trunk allowed vlan 10,20,30<br>
+      end
+    </div>
+  </div>
+  
+  <div style="margin-bottom:25px;">
+    <h5 style="color:#f0b000;">🔹 Switch2 (Central)</h5>
+    <div class="comando-mini">
+      enable<br>
+      configure terminal<br>
+      vlan 10<br>
+      name Docentes<br>
+      vlan 20<br>
+      name Estudiantes<br>
+      vlan 30<br>
+      name Invitados<br>
+      exit<br>
+      interface fastEthernet 0/1<br>
+      switchport mode trunk<br>
+      switchport trunk allowed vlan 10,20,30<br>
+      exit<br>
+      interface fastEthernet 0/3<br>
+      switchport mode trunk<br>
+      switchport trunk allowed vlan 10,20,30<br>
+      end
+    </div>
+  </div>
+  
+  <div style="margin-bottom:25px;">
+    <h5 style="color:#f0b000;">🔹 Switch3</h5>
+    <div class="comando-mini">
+      enable<br>
+      configure terminal<br>
+      vlan 10<br>
+      name Docentes<br>
+      vlan 20<br>
+      name Estudiantes<br>
+      vlan 30<br>
+      name Invitados<br>
+      exit<br>
+      interface range fastEthernet 0/11-15<br>
+      switchport mode access<br>
+      switchport access vlan 30<br>
+      exit<br>
+      interface fastEthernet 0/3<br>
+      switchport mode trunk<br>
+      switchport trunk allowed vlan 10,20,30<br>
+      end
+    </div>
+    <p style="margin-top:10px; font-size:0.85rem; opacity:0.8;">* Nota: Los PCs específicos en Switch3 se asignarían individualmente a sus VLANs correspondientes.</p>
+  </div>
+  
+  <div style="margin-top:25px; padding:15px; background:#0a1420; border-radius:16px;">
+    <h5 style="color:#6fcf97;"><i class="fas fa-desktop"></i> Configuración de PCs (IP Estática)</h5>
+    <div class="comando-mini" style="font-size:0.8rem;">
+      PC1: 192.168.1.10 / 255.255.255.0 / Gateway 192.168.1.1<br>
+      PC2: 192.168.1.11 / 255.255.255.0 / Gateway 192.168.1.1<br>
+      PC3: 192.168.1.12 / 255.255.255.0 / Gateway 192.168.1.1<br>
+      PC4: 192.168.1.13 / 255.255.255.0 / Gateway 192.168.1.1<br>
+      PC5: 192.168.1.14 / 255.255.255.0 / Gateway 192.168.1.1<br>
+      PC6: 192.168.1.15 / 255.255.255.0 / Gateway 192.168.1.1<br>
+      PC7: 192.168.1.16 / 255.255.255.0 / Gateway 192.168.1.1
+    </div>
+  </div>
+`;
+
+            const explicacionVlansTabla = `
+  <h4 style="color:#6fcf97; margin-bottom:20px;"><i class="fas fa-table"></i> Asignación de Puertos por VLAN</h4>
+  
+  <table class="tabla-puertos">
+    <thead>
+      <tr><th>Switch</th><th>Puerto</th><th>Modo</th><th>VLAN</th><th>Dispositivo</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Switch1</td><td>fa0/1</td><td>Trunk</td><td>10,20,30</td><td>→ Switch2</td></tr>
+      <tr><td>Switch1</td><td>fa0/2</td><td>Access</td><td><span class="vlan-badge vlan10">10</span></td><td>PC1 (.10)</td></tr>
+      <tr><td>Switch1</td><td>fa0/3</td><td>Access</td><td><span class="vlan-badge vlan10">10</span></td><td>PC2 (.11)</td></tr>
+      <tr><td>Switch1</td><td>fa0/4</td><td>Access</td><td><span class="vlan-badge vlan20">20</span></td><td>PC3 (.12)</td></tr>
+      <tr><td>Switch1</td><td>fa0/5</td><td>Access</td><td><span class="vlan-badge vlan30">30</span></td><td>PC4 (.13)</td></tr>
+      <tr><td colspan="5" style="background:#1a2e45;"></td></tr>
+      <tr><td>Switch2</td><td>fa0/1</td><td>Trunk</td><td>10,20,30</td><td>→ Switch1</td></tr>
+      <tr><td>Switch2</td><td>fa0/3</td><td>Trunk</td><td>10,20,30</td><td>→ Switch3</td></tr>
+      <tr><td colspan="5" style="background:#1a2e45;"></td></tr>
+      <tr><td>Switch3</td><td>fa0/3</td><td>Trunk</td><td>10,20,30</td><td>→ Switch2</td></tr>
+      <tr><td>Switch3</td><td>fa0/11</td><td>Access</td><td><span class="vlan-badge vlan10">10</span></td><td>PC5 (.14)</td></tr>
+      <tr><td>Switch3</td><td>fa0/12</td><td>Access</td><td><span class="vlan-badge vlan20">20</span></td><td>PC6 (.15)</td></tr>
+      <tr><td>Switch3</td><td>fa0/13</td><td>Access</td><td><span class="vlan-badge vlan30">30</span></td><td>PC7 (.16)</td></tr>
+    </tbody>
+  </table>
+  
+  <div style="margin-top:30px; padding:20px; background:#0a1420; border-radius:16px;">
+    <h5 style="color:#6fcf97; margin-bottom:10px;"><i class="fas fa-check-circle"></i> Resumen de Rangos</h5>
+    <p><span class="vlan-badge vlan10">VLAN 10 (Docentes)</span> → Puertos fa0/2-5 en Switch1, fa0/11 en Switch3</p>
+    <p><span class="vlan-badge vlan20">VLAN 20 (Estudiantes)</span> → Puertos fa0/6-10 (fa0/4 en Switch1, fa0/12 en Switch3)</p>
+    <p><span class="vlan-badge vlan30">VLAN 30 (Invitados)</span> → Puertos fa0/11-15 (fa0/5 en Switch1, fa0/13 en Switch3)</p>
+    <p style="margin-top:15px;"><i class="fas fa-info-circle"></i> Todos los switches tienen configuradas las 3 VLANs. Los trunks transportan el tráfico etiquetado entre ellos.</p>
+  </div>
+`;
+
+            window.showExplicacionVlans = function (tab) {
+                document.querySelectorAll('.ejemplo-vlans-section .explicacion-tab').forEach(t => t.classList.remove('active'));
+                event.target.classList.add('active');
+
+                const content = document.getElementById('explicacionVlansContent');
+                if (tab === 'teoria') content.innerHTML = explicacionVlansTeoria;
+                else if (tab === 'comandos') content.innerHTML = explicacionVlansComandos;
+                else if (tab === 'tabla') content.innerHTML = explicacionVlansTabla;
+            };
+
+            // Inicializar con teoría
+            document.addEventListener('DOMContentLoaded', () => {
+                if (document.getElementById('explicacionVlansContent')) {
+                    document.getElementById('explicacionVlansContent').innerHTML = explicacionVlansTeoria;
+                }
+            });
         })();
     </script>
 </body>
